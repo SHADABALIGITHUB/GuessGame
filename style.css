@@ -14,7 +14,7 @@ body{
     overflow: hidden;
     
    
-    /* bacgroun */
+    /* bacground */
 
 } 
 
@@ -58,6 +58,7 @@ body{
     color: rgb(180, 17, 131);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 2px 30px blue inset;
+    cursor: pointer;
 }
 #phase{
     width: 400px;
@@ -70,31 +71,8 @@ body{
       overflow: hidden;
 }
 
-/* @keyframes appearAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.animated-heading {
-    display: inline-block;
-}
 
-.animated-heading span {
-    display: inline-block;
-    opacity: 0; 
-    animation: appearAnimation 1s forwards; 
-}
- */
-/* 
-.animated-heading span:nth-child(1) { animation-delay: 0ms; }
-.animated-heading span:nth-child(2) { animation-delay: 100ms; }
-.animated-heading span:nth-child(3) { animation-delay: 200ms; } */
 
 .second_page{
     display: none;
@@ -102,7 +80,7 @@ body{
     position: absolute;
         width:100%;
         height: 100%;
-        background-image: url('back.avif');
+        background-image: url('./back.png');
         background-size: cover;
        
         justify-content: center;
@@ -134,7 +112,7 @@ body{
     position: absolute;
         width:100%;
         height: 100%;
-        background-image: url('back.avif');
+        background-image: url('./back.png');
         background-size: cover;
        
         justify-content: center;
@@ -148,6 +126,7 @@ body{
 
 .navbar{ 
     width:100%;
+    
     height: 110px;
       display: flex;
      justify-content: space-between;
@@ -188,7 +167,8 @@ hr{
 .head1{
     margin: 0;
     font-size: 20px;
-    color: rgb(37, 71, 3);
+    color: rgb(0, 0, 0);
+    font-weight: 800;
     font-family: 'Press Start 2P', cursive;
     
 
@@ -211,38 +191,13 @@ hr{
     
 
 }
-/* .game_box{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-**/
 
-
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-   
-  
-  } */
-
-   /* .card {
-    width: calc(25% - 10px);
-    height: calc(33.333% - 10px);
-    margin: 5px;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  } */
-  
   .fakebody {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    width: 100%;
+    height: 90vh;
     
     
   }
@@ -251,9 +206,9 @@ hr{
   }
   
   .game_box {
-    /* background-color: blue; */
-    width: 1274px;
-    height: 450px;
+   
+    width: 100%;
+    height: 100%;
     margin: 2px;
     display: flex;
     flex-wrap: wrap;
@@ -262,9 +217,9 @@ hr{
 
   .cards{
     margin:5px;
-    width:80px;
-    height: 140px;
-    /* background-color: rgb(173, 24, 24); */
+    width:6%;
+    height:26%;
+    
     position: relative;
     transform:scale(1);
     transform-style: preserve-3d;
@@ -288,7 +243,6 @@ hr{
     padding: 5px;
     position: absolute;
     border-radius: 20px;
-    /* background: #1C7CCC; */
     backface-visibility: hidden;
   }
   

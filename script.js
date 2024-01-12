@@ -1,3 +1,5 @@
+// first page 
+
 let a=document.getElementById("logo_img").addEventListener("mouseenter",function(){
 
    document.getElementById('logo_img').style.filter="grayscale(100%)";
@@ -45,30 +47,10 @@ document.head.appendChild(style);
 }
 
 anime();
-// for(let a=0;a<10;a++){
-//     anime();
-    
 
-// }
 
-// setTimeout(() => {
-//     const scalingDiv = document.getElementById("scalingDiv");
-//     scalingDiv.classList.add("fullscreen");
-// }, 1000);
+//  openning second page  on clicking 
 
-// const scalingDiv = document.getElementById("scalingDiv");
-// scalingDiv.classList.add("fullscreen");
-
-// scalingDiv.addEventListener("transitionend", function() {
-//     scalingDiv.classList.remove("fullscreen");
-//     scalingDiv.style.transition = "none"; // Disable further transitions
-// });
-
-// setTimeout(() => {
-//         const scalingDiv = document.getElementById("scalingDiv");
-
-         
-//     }, 2000);
 const scalingDiv = document.getElementById("scalingDiv");
 scalingDiv.addEventListener("click", function() {
     this.style.transform = "scale(3)";
@@ -101,24 +83,6 @@ second page
 
 const cards = document.querySelectorAll('.cards');
 const Score=document.getElementById('score1');
-
-let temp=0;
-Score.addEventListener("click",function(){
-    console.log(temp);
-  
-    
-})
-
-console.log(Score);
-setTimeout(()=>{
-   
-    Score.style.color="red";
-    
-  
-
-},3000)
-
-  
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -183,3 +147,14 @@ function resetBoard() {
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+
+
+
+
+
+//  after 13 jan 2024
+
+  const score1=document.getElementById('p1_score');
+
+  score1.innerText=0;
