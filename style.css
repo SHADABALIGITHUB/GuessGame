@@ -6,16 +6,14 @@ body{
     position: absolute;
     width:100%;
     height: 100%;
-    background-image: url('background.jpg');
+    background-image: url('./images/background.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
     opacity: 0.9;
     overflow: hidden;
     
-   
-    /* bacground */
-
+    
 } 
 
 .left{
@@ -53,9 +51,10 @@ body{
    
 }
 .text{
-    font-style: oblique;
+    
+    font-style: bold;
     font-size: 40px;
-    color: rgb(180, 17, 131);
+    color: rgb(0, 0, 0);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-shadow: 2px 2px 30px blue inset;
     cursor: pointer;
